@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import CommonImage from "./CommonImage";
 import { StaticImageData } from "next/image";
 

@@ -1,4 +1,3 @@
-import CommonImage from "@/components/CommonImage";
 import { servicesDataDetail } from "../../../data/services-detail-data";
 import Container from "@/components/Container";
 import ServicesSatisfaction from "./services-satisfaction";
@@ -10,7 +9,7 @@ export default function ServicesDetail() {
     <div>
       <div className="bg-water pt-16 pb-7">
         <Container className="">
-        <div className="text-ferrari-red flex items-center gap-4">
+          <div className="text-ferrari-red flex items-center gap-4">
             <div className="h-px w-8 border border-ferrari-red" />
             <div className="text-xl font-medium">
               {servicesDataDetail.title}

@@ -3,7 +3,7 @@ import { aboutUSMainData } from "../../../../data/about-data";
 import Container from "@/components/Container";
 
 interface propsType {
-  home: boolean;
+  home?: boolean;
 }
 
 export default function AboutUsMain({ home }: propsType): JSX.Element {
