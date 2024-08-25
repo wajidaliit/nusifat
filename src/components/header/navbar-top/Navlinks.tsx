@@ -19,7 +19,7 @@ const lists = {
       des: "info@nusifat.com",
     },
   ],
-  navButton: <Button children="Get a Quote" className="uppercase" icon={rightUpArrow} />,
+  navButton: <Button className="uppercase" icon={rightUpArrow} >Get a Quote</Button>,
 };
 
 export default function Navlinks() {
