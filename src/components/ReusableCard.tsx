@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import CommonImage from "./CommonImage";
 import { StaticImageData } from "next/image";
 import Button from "./Button";
@@ -17,7 +16,7 @@ interface CardItem {
 interface ReusableCardProps {
   className?: string;
   data?: CardItem[];
-  href: string;
+  href?: string;
 }
 
 export default function ReusableCard({
