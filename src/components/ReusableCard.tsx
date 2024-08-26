@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import CommonImage from "./CommonImage";
 import { StaticImageData } from "next/image";
+import Button from "./Button";
 
 interface CardItem {
   img?: StaticImageData;
@@ -9,28 +10,34 @@ interface CardItem {
   count?: string | number;
   bgColor?: string;
   color?: string;
-  button?: ReactNode;
+  button?: string;
+  buttonBg?: string;
 }
 
 interface ReusableCardProps {
   className?: string;
   data?: CardItem[];
+  href: string;
 }
 
 export default function ReusableCard({
   data = [],
+  href = "",
   className = "",
 }: ReusableCardProps): JSX.Element {
   return (
     <div className={`relative ${className}`}>
       {data?.map((item, index) => (
-        <div key={index} className="bg-white rounded-2xl relative">
+        <div
+          key={index}
+          className={`bg-white relative ${item?.count ? "rounded-2xl" : ""}`}
+        >
           {item.img && (
             <div className="h-72">
               <CommonImage
                 src={item.img}
                 alt="img"
-                className="rounded-t-2xl bg-cover w-full h-full"
+                className={` bg-cover w-full h-full ${item?.count ? "rounded-t-2xl" : ""}`}
               />
             </div>
           )}
@@ -42,9 +49,15 @@ export default function ReusableCard({
             </div>
           )}
           <div className="p-10">
-            <h2 className="text-2xl font-semibold">{item.title}</h2>
+            <h2 className="text-xl md:text-2xl font-semibold">{item.title}</h2>
             <p className="my-4">{item.des}</p>
-            <div>{item.button}</div>
+            <Button
+              href={`${href}${item.title}`}
+              variant={`${item.buttonBg}`}
+              className="uppercase"
+            >
+              {item.button}
+            </Button>
           </div>
         </div>
       ))}

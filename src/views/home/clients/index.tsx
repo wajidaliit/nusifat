@@ -17,7 +17,7 @@ export default function Client(): JSX.Element {
         <h4 className="text-ferrari-red text-xl font-semibold uppercase text-center">
           Our Clients
         </h4>
-        <h1 className="text-4xl font-bold uppercase text-center mt-6 mb-10">
+        <h1 className="text-xl md:text-4xl font-bold uppercase text-center mt-6 mb-10">
           Some of Our Clients
         </h1>
         <Marquee gradient={true} gradientWidth={100} speed={100} pauseOnHover={true}>

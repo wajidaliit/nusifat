@@ -5,7 +5,7 @@ import Button from "@/components/Button";
 export default function LiveReply() {
   return (
     <>
-      <h1 className="text-6xl font-bold">
+      <h1 className="text-xl md:text-4xl font-bold">
         {blogsDataDetail?.blogdetailRelpy?.title}
       </h1>
       <h5 className="my-5">{blogsDataDetail?.blogdetailRelpy?.description}</h5>

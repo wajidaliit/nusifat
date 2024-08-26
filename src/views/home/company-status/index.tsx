@@ -68,7 +68,7 @@ export default function CompanyStatus() {
       <h2 className="text-xl text-ferrari-red uppercase font-medium">
         Our Company Status
       </h2>
-      <p className="text-4xl uppercase font-bold mt-3 mb-14 max-w-xl">
+      <p className="text-xl md:text-4xl uppercase font-bold mt-3 mb-14 max-w-xl">
         Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus
       </p>
       <StatusCard data={data} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 md:gap-6" />

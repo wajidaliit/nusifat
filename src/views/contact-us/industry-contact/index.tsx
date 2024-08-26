@@ -7,7 +7,7 @@ export default function IndustryContact() {
       <p className="text-cool-grey">
         {contactUsData?.blogLinks?.quickListing?.description}
       </p>
-      <div className="my-8">
+      <div className="my-8 grid grid-cols-1 gap-4">
         {contactUsData?.blogLinks?.quickListing?.lists?.map((item, index) => (
           <div key={index} className="flex gap-4">
             <div >{item.icon}</div>

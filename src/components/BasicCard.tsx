@@ -30,7 +30,7 @@ export default function BasicCard({
             />
           </div>
           <div className="p-8 text-center">
-            <h2 className={`text-2xl font-semibold mb-1 ${item.color}`}>
+            <h2 className={`text-xl md:text-2xl font-semibold mb-1 ${item.color}`}>
               {item.name}
             </h2>
             <p className={`${item.positionColor}`}>{item.position}</p>

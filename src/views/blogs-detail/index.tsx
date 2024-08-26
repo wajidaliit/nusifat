@@ -13,12 +13,12 @@ export default function BlogsDetail() {
             <div className="h-px w-8 border border-ferrari-red" />
             <div className="text-xl font-medium">{blogsDataDetail.title}</div>
           </div>
-          <h1 className="text-2xl md:text-6xl font-semibold max-w-md mt-2 mb-16">
+          <h1 className="text-xl md:text-4xl font-semibold max-w-md mt-2 mb-16">
             {blogsDataDetail.subTitle}
           </h1>
           <div className="grid grid-cols-12 gap-8">
             <div className="col-span-12 md:col-span-8 ">
-              <div className="w-full h-[28rem]">
+              <div className="w-full h-64 md:h-[28rem]">
                 <CommonImage
                   src={blogsDataDetail?.blogdetailsItem?.img1}
                   alt="img"
@@ -55,14 +55,14 @@ export default function BlogsDetail() {
                 {blogsDataDetail?.blogdetailsItem?.blogDescription2}
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
-                <div className="h-96 w-full">
+                <div className="h-64 md:h-96 w-full">
                   <CommonImage
                     src={blogsDataDetail?.blogdetailsItem?.img2}
                     alt="img"
                     className="object-cover w-full h-full"
                   />
                 </div>
-                <div className="h-96 w-full">
+                <div className="h-64 md:h-96 w-full">
                   <CommonImage
                     src={blogsDataDetail?.blogdetailsItem?.img3}
                     alt="img"

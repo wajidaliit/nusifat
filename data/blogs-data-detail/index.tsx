@@ -78,7 +78,7 @@ interface BlogsCategoryTypes {
 
 export const blogsDataDetail: BlogsCategoryTypes = {
   title: "Blogs",
-  subTitle: "Lorem ipsum dolor",
+  subTitle: "Lorem ipsum dolor sit amet", 
   button: <Button>Construction</Button>,
   date: "May 31, 2021",
   user: "By Admin",

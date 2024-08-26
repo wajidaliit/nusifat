@@ -9,7 +9,7 @@ export default function HomeService() {
         <h2 className="text-xl text-ferrari-red uppercase font-medium text-center">
           Our Services
         </h2>
-        <p className="text-4xl uppercase text-center font-bold mt-3 mb-14">
+        <p className="text-xl md:text-4xl uppercase text-center font-bold mt-3 mb-14">
           Quality Servicing Oppertunity
         </p>
         <ReusableCard

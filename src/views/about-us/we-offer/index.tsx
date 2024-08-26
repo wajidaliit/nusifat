@@ -2,6 +2,7 @@ import CommonImage from "@/components/CommonImage";
 import { weOfferData } from "../../../../data/about-data";
 import Container from "@/components/Container";
 import ProgressBar from "@/components/ProgressBar";
+import Button from "@/components/Button";
 
 export default function WeOffer(): JSX.Element {
   return (
@@ -15,7 +16,7 @@ export default function WeOffer(): JSX.Element {
                 {weOfferData.title}
               </h4>
             </div>
-            <h1 className="text-4xl font-bold uppercase mt-4">
+            <h1 className="text-xl md:text-4xl font-bold uppercase mt-4">
               {weOfferData.desTitle}
             </h1>
             <div className="my-8 text-cool-grey">
@@ -30,11 +31,11 @@ export default function WeOffer(): JSX.Element {
                   percentage={item.percentage}
                 />
               ))}
-            </div>
-            <div className="mt-8">{weOfferData.button}</div>
+            </div> 
+            <Button href="/contact-us" className="mt-8 uppercase">Contact Us</Button>
           </div>
           <div className="">
-            <div className="relative h-[28rem] w-full lg:h-[38rem] lg:w-[30rem] ml-auto">
+            <div className="relative h-[20rem] md:h-[28rem] w-full lg:h-[38rem] lg:w-[30rem] ml-auto">
               <CommonImage
                 src={weOfferData.workerImg}
                 alt="img"

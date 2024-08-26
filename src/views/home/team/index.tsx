@@ -39,12 +39,12 @@ const data: CardItem[] = [
 
 export default function HomeTeam() {
   return (
-    <div className="bg-water">
+    <div className="bg-water" id="team">
       <Container className="py-10">
         <h2 className="text-xl text-ferrari-red uppercase font-medium text-center">
           Our Team
         </h2>
-        <p className="text-4xl uppercase text-center font-bold mt-3 mb-14">
+        <p className="text-xl md:text-4xl uppercase text-center font-bold mt-3 mb-14">
           Our Technical Experts
         </p>
         <BasicCard data={data} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" />

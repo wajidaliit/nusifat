@@ -37,7 +37,7 @@ export default function ServicesArchitectureSystem() {
               </div>
             </div>
             <div className=" ">
-              <div className="h-[20rem] md:h-[34rem] w-full md:max-w-[26rem] relative ml-auto mt-4 md:mt-0">
+              <div className="h-64 md:h-[34rem] w-full md:max-w-[26rem] relative ml-auto mt-4 md:mt-0">
                 <CommonImage
                   src={servicesDataDetail?.img6}
                   alt="img"

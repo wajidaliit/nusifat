@@ -53,10 +53,10 @@ export const footerData: FooterData = {
     {
       title: "Useful Links",
       links: [
-        { name: "Home", href: "/home" },
+        { name: "Home", href: "/" },
         { name: "Services", href: "/services" },
-        { name: "About Us", href: "/about" },
-        { name: "Our Team", href: "/team" },
+        { name: "About Us", href: "/about-us" },
+        { name: "Our Team", href: "/#team" },
         { name: "Blogs", href: "/blogs" },
       ],
     },

@@ -8,7 +8,7 @@ export default function ServicesConstruction() {
       <div className="bg-water">
         <Container className="py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
-            <div className="">
+            <div className="order-2 md:order-1 mt-8 md:mt-0">
               <div className="h-64 md:h-[26rem] max-h-[40rem] w-full relative">
                 <CommonImage
                   src={servicesDataDetail?.img5}
@@ -17,8 +17,8 @@ export default function ServicesConstruction() {
                 />
               </div>
             </div>
-            <div className="mt-4 md:mt-0">
-              <h1 className="text-4xl font-bold">
+            <div className="  order-1 md:order-2 ">
+              <h1 className="text-xl md:text-4xl font-bold">
                 {servicesDataDetail?.thirdSection?.title}
               </h1>
               <h5 className="my-4 text-cool-grey">
@@ -27,7 +27,7 @@ export default function ServicesConstruction() {
               <h5 className="my-4 text-cool-grey">
                 {servicesDataDetail?.thirdSection?.description2}
               </h5>
-              <Button>Contact Us</Button>
+              <Button href="/contact-us">Contact Us</Button>
             </div>
           </div>
           <div className="grid grid-cols-1 gap-3 mt-8">

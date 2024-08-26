@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Fragment } from "react";
 import Slider from "react-slick";
 import slide1 from "@/assets/hero/slide1.jpg";
 import slide2 from "@/assets/hero/slide2.jpg";
@@ -9,6 +9,7 @@ import slide4 from "@/assets/hero/slide4.jpg";
 import Button from "@/components/Button";
 import { StaticImageData } from "next/image";
 import CommonImage from "@/components/CommonImage";
+import Container from "@/components/Container";
 
 // Define slider settings
 const settings = {
@@ -63,33 +64,33 @@ const slides: SlideProps[] = [
 
 const SliderComponent: React.FC = () => {
   return (
-    <div className="relative w-full ">
-      <Slider {...settings}>
-        {slides.map((slide, index) => (
-          <div key={index} className="relative h-[40rem]">
-            <CommonImage
-              src={slide.src}
-              alt={slide.alt}
-              className="w-full h-full object-cover"
-              style={{ 
-                filter: "blur(1px) brightness(0.5)",
-                opacity: 0.9,
-                zIndex: -1,
-              }}
-            />
-            <div className="absolute left-40 top-1/4 bg-opacity-50 p-4 ">
-              <p className="text-md md:text-2xl lg:text-4xl mb-4 text-white">
+    <Slider {...settings}>
+      {slides.map((slide, index) => (
+        <div
+          key={index}
+          className="relative h-60 md:h-[40rem] w-full"
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: `url(${slide.src.src})`,
+              filter: "blur(1px) brightness(0.5)",
+              opacity: 0.9,
+              zIndex: -1,
+            }}
+          />
+          <Container className="h-60 md:h-[40rem] flex flex-col justify-center text-white gap-4 md:gap-6"> 
+              <p className="text-md md:text-2xl lg:text-4xl ">
                 {slide.subTitle}
               </p>
-              <h2 className="text-xl md:text-6xl font-bold mb-16 text-white max-w-xl">
+              <h2 className="text-xl md:text-6xl font-bold max-w-xl">
                 {slide.title}
               </h2>
-              <div>{slide.button}</div>
-            </div>
-          </div>
-        ))}
-      </Slider>
-    </div>
+              <div>{slide.button}</div> 
+          </Container>
+        </div>
+      ))}
+    </Slider>
   );
 };
 

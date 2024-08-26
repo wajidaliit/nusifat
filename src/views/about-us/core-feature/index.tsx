@@ -7,7 +7,7 @@ export default function CoreFeature(): JSX.Element {
     <div className="bg-water">
       <Container className="py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="">
+          <div className="order-2 md:order-1">
             <div className="w-full sm:h-[39rem] lg:w-[34rem] relative">
               <CommonImage
                 src={coreFeatureData.architectsImg}
@@ -23,14 +23,14 @@ export default function CoreFeature(): JSX.Element {
               </div>
             </div>
           </div>
-          <div className="px-4">
+          <div className="px-4 order-1 md:order-2">
             <div className="flex items-center gap-3">
               <div className="h-px w-10 border border-ferrari-red" />
               <h4 className="text-ferrari-red text-xl uppercase">
                 {coreFeatureData.title}
               </h4>
             </div>
-            <h1 className="text-4xl font-bold uppercase mt-4">
+            <h1 className="text-xl md:text-4xl font-bold uppercase mt-4">
               {coreFeatureData.desTitle}
             </h1>
             <div className="my-8 text-cool-grey">

@@ -33,7 +33,7 @@ export default function Testimonial() {
         <h2 className="text-xl text-ferrari-red uppercase font-medium text-center">
           Testimonials
         </h2>
-        <p className="text-4xl uppercase text-center font-bold mt-3 mb-14">
+        <p className="text-xl md:text-4xl uppercase text-center font-bold mt-3 mb-14">
           What our customer say
         </p>
         <SimpleCard

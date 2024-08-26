@@ -5,7 +5,7 @@ export default function ServicesSatisfaction() {
   return (
     <>
       <div className="bg-water">
-        <Container className="pb-36"> 
+        <Container className="pb-12 md:pb-36"> 
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
             <div className="">
               <div className="h-64 md:h-[40rem] w-full md:w-[30rem] relative">
@@ -24,7 +24,7 @@ export default function ServicesSatisfaction() {
               </div>
             </div>
             <div className="mt-4 md:mt-0">
-              <h1 className="text-4xl font-bold">
+              <h1 className="text-xl md:text-4xl font-bold">
                 {servicesDataDetail?.firstSection?.title}
               </h1>
               <div className="mt-6 mb-10">

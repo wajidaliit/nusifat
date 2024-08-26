@@ -4,7 +4,9 @@ import Container from "@/components/Container";
 import logo from "@/assets/header/logo.png";
 import Navlinks from "./Navlinks";
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; 
+import { AiOutlineClose } from "react-icons/ai"; 
+import { BsInfoCircleFill } from "react-icons/bs";
+
 import NavBar from "../nav-bar";
 
 export default function Header() {
@@ -22,9 +24,9 @@ export default function Header() {
         <div className="hidden md:block">
           <Navlinks />
         </div>
-        <div className="block md:hidden absolute right-28">
+        <div className="block md:hidden absolute right-28 top-8">
           <button onClick={toggleButton} className="text-black text-2xl">
-            {open ? <AiOutlineClose /> : <AiOutlineMenu />}
+            {open ? <AiOutlineClose size="2.2rem" /> : <BsInfoCircleFill color="#E90000" size="2.2rem" />}
           </button>
         </div>
         {open && (

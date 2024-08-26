@@ -24,7 +24,7 @@ export default function Service() {
           <div className="h-px w-8 border border-ferrari-red" />
           <div className="text-xl font-medium">{servicesData.title}</div>
         </div>
-        <h1 className="text-2xl md:text-6xl font-semibold max-w-md mt-2 mb-16">
+        <h1 className="text-xl md:text-4xl font-semibold max-w-md mt-2 mb-16">
           {servicesData.subTitle}
         </h1>
         <div className="grid grid-cols-12 gap-8">
@@ -32,6 +32,7 @@ export default function Service() {
             <ReusableCard
               data={currentItems}
               className="grid grid-cols-1 md:grid-cols-2 gap-8"
+              href="/services/"
             />
             {/* Pagination Component */}
             <Pagination

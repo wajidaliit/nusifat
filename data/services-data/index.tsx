@@ -1,4 +1,3 @@
-import Button from "@/components/Button";
 import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import service1 from "@/assets/services/service1.jpg";
@@ -43,7 +42,8 @@ interface CardItemTypes {
   count: string | number;
   bgColor: string;
   color: string;
-  button: ReactNode;
+  button: string;
+  buttonBg: string;
 }
 
 interface ServicesCategoryTypes {
@@ -113,7 +113,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "01",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service2,
@@ -122,7 +123,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "02",
       bgColor: "bg-white",
       color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service3,
@@ -131,7 +133,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "03",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "secondary",
     },
     {
       img: service1,
@@ -140,7 +143,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "04",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service2,
@@ -149,7 +153,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "05",
       bgColor: "bg-white",
       color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service3,
@@ -158,7 +163,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "06",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "secondary",
     },
     {
       img: service1,
@@ -167,7 +173,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "07",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service2,
@@ -176,7 +183,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "08",
       bgColor: "bg-white",
       color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service3,
@@ -185,7 +193,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "09",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "secondary",
     },
     {
       img: service1,
@@ -194,7 +203,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "10",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service2,
@@ -203,7 +213,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "11",
       bgColor: "bg-white",
       color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service3,
@@ -212,7 +223,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "12",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "secondary",
     },
     {
       img: service1,
@@ -221,7 +233,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "13",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service2,
@@ -230,7 +243,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "14",
       bgColor: "bg-white",
       color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service3,
@@ -239,7 +253,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "15",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "secondary",
     },
     {
       img: service1,
@@ -248,7 +263,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "16",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service2,
@@ -257,7 +273,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "17",
       bgColor: "bg-white",
       color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service3,
@@ -266,7 +283,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "18",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "secondary",
     },
     {
       img: service1,
@@ -275,7 +293,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "19",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service2,
@@ -284,7 +303,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "20",
       bgColor: "bg-white",
       color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service3,
@@ -293,7 +313,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "21",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "secondary",
     },
     {
       img: service1,
@@ -302,7 +323,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "22",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service2,
@@ -311,7 +333,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "23",
       bgColor: "bg-white",
       color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "danger",
     },
     {
       img: service3,
@@ -320,52 +343,8 @@ export const servicesData: ServicesCategoryTypes = {
       count: "24",
       bgColor: "bg-ferrari-red",
       color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
-    },
-    {
-      img: service2,
-      title: "Elite Structures",
-      des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
-      count: "23",
-      bgColor: "bg-white",
-      color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
-    },
-    {
-      img: service3,
-      title: "Elite Structures",
-      des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
-      count: "24",
-      bgColor: "bg-ferrari-red",
-      color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
-    },
-    {
-      img: service2,
-      title: "Elite Structures",
-      des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
-      count: "25",
-      bgColor: "bg-white",
-      color: "text-ferrari-red",
-      button: <Button variant="secondary">VIEW SERVICE</Button>,
-    },
-    {
-      img: service3,
-      title: "Elite Structures",
-      des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
-      count: "24",
-      bgColor: "bg-ferrari-red",
-      color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
-    },
-    {
-      img: service3,
-      title: "Elite Structures",
-      des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
-      count: "24",
-      bgColor: "bg-ferrari-red",
-      color: "text-white",
-      button: <Button>VIEW SERVICE</Button>,
+      button: "VIEW SERVICE",
+      buttonBg: "secondary",
     },
   ],
 };

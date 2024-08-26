@@ -14,6 +14,7 @@ export default function NavBar() {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+ 
 
   return (
     <nav className="p-1 md:p-4 relative w-full">
@@ -25,7 +26,7 @@ export default function NavBar() {
       </div>
 
       {/* Desktop Menu */}
-      <div className="hidden md:flex bg-ferrari-red mx-24" >
+      <div className="hidden md:flex bg-ferrari-red mx-24">
         <Container className="flex gap-10 place-content-cent  text-white py-4">
           {navLinks?.map((item, index) => (
             <Link
@@ -50,29 +51,30 @@ export default function NavBar() {
 
       {/* Mobile Menu Items */}
       <div
-  className={`absolute right-12  top-full p-12 bg-cool-grey bg-opacity-70 md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
->
-  <Container className="flex flex-col gap-4 text-white py-4">
-    {navLinks?.map((item, index) => (
-      <Link
-        key={index}
-        href={item.href}
-        className={`uppercase gap-4 font-medium text-xl ${pathName === item.href ? "text-black" : ""}`}
+        className={`absolute right-12  top-full p-12 bg-cool-grey bg-opacity-90  md:hidden ${isMobileMenuOpen ? "block" : "hidden"}`}
       >
-        <span
-          className={`flex items-center ${pathName === item.href ? "text-black" : ""}`}
-        >
-          {item.name}
-          <span
-            className={`ml-2 ${pathName === item.href ? "rotate-180" : ""}`}
-          >
-            {item.icon}
-          </span>
-        </span>
-      </Link>
-    ))}
-  </Container>
-</div>
+        <Container className="flex flex-col gap-4 text-white py-4 ">
+          {navLinks?.map((item, index) => (
+            <Link
+              key={index}
+              href={item.href}
+              className={`uppercase gap-4 font-medium text-xl min-w-40 w-56 text-center ${pathName === item.href ? "text-black" : ""}`}
+              onClick={()=>setIsMobileMenuOpen(false)}
+            >
+              <span
+                className={`flex items-center ${pathName === item.href ? "text-black" : ""}`}
+              >
+                {item.name}
+                <span
+                  className={`ml-2 ${pathName === item.href ? "rotate-180" : ""}`}
+                >
+                  {item.icon}
+                </span>
+              </span>
+            </Link>
+          ))}
+        </Container>
+      </div>
     </nav>
   );
 }

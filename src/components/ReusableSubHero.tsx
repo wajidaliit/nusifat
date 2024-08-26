@@ -1,21 +1,19 @@
 "use client";
 
-import CommonImage from "./CommonImage";
 import about from "@/assets/sub-hero/about.jpg";
 import blog from "@/assets/sub-hero/blog.jpg";
 import blogDetail from "@/assets/sub-hero/blog-detail.jpg";
 import service from "@/assets/sub-hero/service.jpg";
 import subService from "@/assets/sub-hero/sub-service.jpg";
 import contactUs from "@/assets/sub-hero/contact-us.jpg";
-import { usePathname } from "next/navigation";
+import { useReadCurrentPath } from "@/hooks/useReadCurreentPath";
+import { useCurrentPath } from "@/hooks/useCurrentPath";
+import { useSegment } from "@/hooks/useSegment";
 
 export default function ReusableSubHero() {
-  const currentPath = usePathname();
-  const path = currentPath
-    ?.split(/[/,-]+/)
-    ?.slice()
-    .join(" ");
-
+  const currentPath = useCurrentPath();
+  const path = useReadCurrentPath();
+  const segment = useSegment();
   const blurImage =
     currentPath === "/about-us"
       ? about
@@ -30,23 +28,28 @@ export default function ReusableSubHero() {
               : currentPath === "blogs/*"
                 ? blogDetail
                 : about;
+
   return (
-    <div className="relative">
-      <div className="h-96">
-        <CommonImage
-          src={blurImage}
-          alt="img"
-          className="object-cover w-full h-full "
-          style={{ 
-            filter: "blur(2px) brightness(0.5)",
-            opacity: 0.8,
-            zIndex: -1,
-          }}
-        />
-      </div>
-      <div className="uppercase absolute left-[28%] sm:left-[30%] md:left-[40%] top-1/2 flex flex-col items-center text-white">
-        <div className="text-5xl sm:text-6xl font-bold">{path}</div>
-        <div className="text-xl flex">Home / {path}</div>
+    <div className="relative h-40 md:h-96 flex items-center justify-center">
+      {/* Background Image with Blur */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url(${blurImage.src})`,
+          filter: "blur(2px) brightness(0.5)",
+          opacity: 0.8,
+          zIndex: -1,
+        }}
+      />
+
+      {/* Text Content */}
+      <div className="relative uppercase flex flex-col items-center justify-center text-white">
+        <div className="text-2xl sm:text-6xl px-2 font-bold max-w-7xl">
+          {segment}
+        </div>
+        <div className="text-sm sm:text-xl px-2 flex text-center max-w-7xl">
+          Home / {path}
+        </div>
       </div>
     </div>
   );

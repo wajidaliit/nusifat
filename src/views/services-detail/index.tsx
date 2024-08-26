@@ -15,7 +15,7 @@ export default function ServicesDetail() {
               {servicesDataDetail.title}
             </div>
           </div>
-          <h1 className="text-2xl md:text-6xl font-semibold max-w-md mt-2 ">
+          <h1 className="text-xl md:text-4xl font-semibold max-w-md mt-2 ">
             {servicesDataDetail.subTitle}
           </h1>
         </Container>
