@@ -4,8 +4,8 @@ import Container from "@/components/Container";
 import logo from "@/assets/header/logo.png";
 import Navlinks from "./Navlinks";
 import { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai"; 
-import { BsInfoCircleFill } from "react-icons/bs";
+import { AiOutlineClose } from "react-icons/ai";
+import { MdContactMail } from "react-icons/md";
 
 import NavBar from "../nav-bar";
 
@@ -16,7 +16,7 @@ export default function Header() {
     setOpen(!open);
   };
   return (
-    <header>
+    <header className="">
       <Container className="flex justify-between items-center py-3 relative z-10">
         <div>
           <CommonImage src={logo} alt="logo" width={120} height={120} />
@@ -24,9 +24,13 @@ export default function Header() {
         <div className="hidden md:block">
           <Navlinks />
         </div>
-        <div className="block md:hidden absolute right-28 top-8">
-          <button onClick={toggleButton} className="text-black text-2xl">
-            {open ? <AiOutlineClose size="2.2rem" /> : <BsInfoCircleFill color="#E90000" size="2.2rem" />}
+        <div className="block md:hidden absolute right-24 top-8">
+          <button onClick={toggleButton}>
+            {open ? (
+              <AiOutlineClose size="2.2rem" />
+            ) : (
+              <MdContactMail color="#E90000" size="2.2rem" />
+            )}
           </button>
         </div>
         {open && (

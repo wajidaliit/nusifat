@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import Button from "./Button";
 import rightUpArrow from "@/assets/header/rightUpArrow.svg";
 import { StaticImageData } from "next/image";
 import CommonImage from "./CommonImage";
+import { useRouter } from "next/navigation";
 
 interface ReusableBlogLinksProps {
   data: {
@@ -25,6 +27,12 @@ const ReusableBlogLinks: React.FC<ReusableBlogLinksProps> = ({
   className,
   recent,
 }) => {
+  const router = useRouter();
+  const handleNavigation = (path?: string) => {
+    if (path) {
+      router.push(path);
+    }
+  };
   return (
     <div className={`${className}`}>
       <h2 className="text-2xl font-bold">{data?.title}</h2>
@@ -64,6 +72,7 @@ const ReusableBlogLinks: React.FC<ReusableBlogLinksProps> = ({
             <div
               key={index}
               className="flex justify-between items-center bg-white cursor-pointer"
+              onClick={() => handleNavigation(item.path)}
             >
               <h2 className="text-lg px-3">{item.name}</h2>
               <Button icon={rightUpArrow} className="py-4" />

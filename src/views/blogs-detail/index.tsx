@@ -40,8 +40,9 @@ export default function BlogsDetail() {
               <div className="my-4 flex justify-center items-center">
                 {blogsDataDetail?.icon}
               </div>
-              <div className="pl-2 bg-ferrari-red">
-                <h2 className="text-2xl font-bold bg-water pl-4 py-4">
+              <div className="pl-2 flex">
+                <div className="w-8 md:w-4 bg-ferrari-red" />
+                <h2 className="text-xl md:text-2xl font-bold bg-water pl-4 py-4">
                   {blogsDataDetail?.blogdetailsItem?.blogDescriptionTitle}
                 </h2>
               </div>
@@ -109,7 +110,7 @@ export default function BlogsDetail() {
             </div>
           </div>
         </Container>
-      </div> 
+      </div>
       <Container className="py-20">
         <LiveReply />
       </Container>

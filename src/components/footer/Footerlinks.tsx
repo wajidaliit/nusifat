@@ -1,18 +1,20 @@
 "use client";
 
-import facebook from "@/assets/footer/facebook.svg";
-import instagram from "@/assets/footer/instagram.svg";
-import linkedin from "@/assets/footer/linkedin.svg";
-import twitter from "@/assets/footer/twitter.svg";
 import logoo from "@/assets/footer/logo.png";
-import phone from "@/assets/footer/phone.svg";
-import email from "@/assets/footer/email.svg";
-import location from "@/assets/footer/location.svg";
+import { FaLocationDot } from "react-icons/fa6";
+import { TfiEmail } from "react-icons/tfi";
+import { FaPhoneVolume } from "react-icons/fa6";
+import { TfiFacebook } from "react-icons/tfi";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 import { StaticImageData } from "next/image";
+import { ReactNode } from "react";
 
 interface SocialMediaLink {
   name: string;
-  icon: string; // Assuming the imported SVGs are of type string
+  icon: ReactNode;
   url: string;
 }
 
@@ -22,7 +24,7 @@ interface FooterLink {
 }
 interface contactInfoLink {
   data: string;
-  icon: string;
+  icon: ReactNode;
 }
 
 interface FooterSection {
@@ -44,10 +46,26 @@ export const footerData: FooterData = {
   aboutText:
     "Lorem ipsum dolor sit amet. Et harum vitae ad debitis dolorum et similique Lorem ipsum dolor sit amet. Et harum vitae ad debitis do lorum et similique.",
   socialMedia: [
-    { name: "Facebook", icon: facebook, url: "https://www.facebook.com" },
-    { name: "X", icon: twitter, url: "https://www.twitter.com" },
-    { name: "Instagram", icon: instagram, url: "https://www.instagram.com" },
-    { name: "LinkedIn", icon: linkedin, url: "https://www.linkedin.com" },
+    {
+      name: "Facebook",
+      icon: <TfiFacebook size="1.5rem" />,
+      url: "https://www.facebook.com",
+    },
+    {
+      name: "X",
+      icon: <FaXTwitter size="1.5rem" />,
+      url: "https://www.twitter.com",
+    },
+    {
+      name: "Instagram",
+      icon: <FaInstagram size="1.5rem" />,
+      url: "https://www.instagram.com",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedinIn size="1.5rem" />,
+      url: "https://www.linkedin.com",
+    },
   ],
   sections: [
     {
@@ -63,9 +81,9 @@ export const footerData: FooterData = {
     {
       title: "Contact Us",
       contactInfo: [
-        { data: "+198 525 4584", icon: phone },
-        { data: "info@nusifat.com", icon: email },
-        { data: "22 Street, ABC Road, New York", icon: location },
+        { data: "+198 525 4584", icon: <FaPhoneVolume /> },
+        { data: "info@nusifat.com", icon: <TfiEmail /> },
+        { data: "22 Street, ABC Road, New York", icon: <FaLocationDot /> },
       ],
     },
   ],

@@ -63,9 +63,9 @@ export const servicesData: ServicesCategoryTypes = {
       title: "Quick Links",
       lists: [
         { name: "About us", path: "/about-us" },
-        { name: "Services", path: "/service" },
+        { name: "Services", path: "/services" },
         { name: "Blogs", path: "/blogs" },
-        { name: "Contact us", path: "/contact us" },
+        { name: "Contact us", path: "/contact-us" },
       ],
     },
     // Category Section

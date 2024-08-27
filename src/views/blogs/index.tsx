@@ -1,7 +1,8 @@
 "use client";
+
 import { useState } from "react";
 import ReusableBlogLinks from "@/components/ReusableBlogLinks";
-import { blogsData } from "../../../data/blogs-data";  
+import { blogsData } from "../../../data/blogs-data";
 import Container from "@/components/Container";
 import ReusableCard from "@/components/ReusableCard";
 import Pagination from "@/components/Pagination";

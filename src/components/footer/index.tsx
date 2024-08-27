@@ -26,13 +26,9 @@ export default function Footer() {
                   href={item.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  <CommonImage
-                    src={item.icon}
-                    alt={item.name}
-                    width={24}
-                    height={24}
-                  />
+                  className="border border-gray-700 p-2"
+                > 
+                  {item.icon}
                 </Link>
               ))}
             </div>
@@ -58,8 +54,8 @@ export default function Footer() {
                   <div className="mt-4 space-y-5 max-w-52">
                     {section.contactInfo.map((info, idx) => (
                       <div key={idx} className="text-lg flex items-start">
-                        <div className="mr-3 bg-ferrari-red p-0.5 flex-shrink-0">
-                          <CommonImage src={info.icon} alt="icon" />
+                        <div className="mr-3 bg-ferrari-red p-1 flex-shrink-0"> 
+                          {info.icon}
                         </div>{" "}
                         <p className="flex-1">{info.data}</p>
                       </div>
