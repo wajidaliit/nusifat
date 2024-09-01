@@ -1,10 +1,45 @@
 /* CSS file to style the dots */
 .slick-dots {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  background-color: white;
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* old stile */
+/* .slick-dots {
     background-color: white;
     max-width: max-content;
     bottom: 0px;
-    padding: 15px 30px;
-    /* transform: translateX(-50%); */
+    padding: 15px 30px; 
   }
   
   .slick-dots li {
@@ -32,5 +67,5 @@
     .slick-dots { 
         padding: 8px 16px; 
       }
-  }
+  } */
   
