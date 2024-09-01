@@ -31,9 +31,11 @@ export default function Blogs() {
         <div className="grid grid-cols-12 gap-8">
           <div className="col-span-12 md:col-span-8 ">
             <ReusableCard
+              type="basic"
               data={currentItems}
               className="grid grid-cols-1 md:grid-cols-2 gap-8"
               href="/blogs/"
+              bodyClass="p-10"
             />
             {/* Pagination Component */}
             <Pagination

@@ -1,11 +1,12 @@
-import React, { ReactNode } from "react";
+"use client";
+import React, { ReactNode, memo } from "react";
 
 interface ContainerProps {
   children: ReactNode;
   className?: string;
 }
 
-export default function Container({
+const Container = memo(function Container({
   children,
   className = "",
 }: ContainerProps) {
@@ -14,4 +15,6 @@ export default function Container({
       {children}
     </div>
   );
-}
+});
+
+export default Container;

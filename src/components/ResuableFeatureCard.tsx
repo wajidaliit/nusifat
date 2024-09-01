@@ -1,3 +1,4 @@
+import { memo } from "react";
 import CommonImage from "./CommonImage";
 import { StaticImageData } from "next/image";
 
@@ -13,7 +14,7 @@ interface ResuableFeatureCardProps {
   data?: CardItem[];
 }
 
-export default function ResuableFeatureCard({
+const ResuableFeatureCard = memo(function ResuableFeatureCard({
   data = [],
   className = "",
 }: ResuableFeatureCardProps): JSX.Element {
@@ -35,4 +36,6 @@ export default function ResuableFeatureCard({
       ))}
     </div>
   );
-}
+});
+
+export default ResuableFeatureCard;

@@ -1,5 +1,6 @@
+"use client";
 import Image, { StaticImageData } from "next/image";
-import { CSSProperties, FC } from "react";
+import { CSSProperties, FC, memo } from "react";
 
 interface CommonImageProps {
   src: string | StaticImageData;
@@ -30,4 +31,4 @@ const CommonImage: FC<CommonImageProps> = ({
   );
 };
 
-export default CommonImage;
+export default memo(CommonImage);

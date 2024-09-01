@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Slider from "react-slick";
 import slide1 from "@/assets/hero/slide1.jpg";
@@ -9,6 +8,7 @@ import slide4 from "@/assets/hero/slide4.jpg";
 import Button from "@/components/Button";
 import { StaticImageData } from "next/image";
 import Container from "@/components/Container";
+import "./SliderComponent.css"; // Import your CSS file
 
 // Define slider settings
 const settings = {
@@ -20,6 +20,7 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 3000,
   arrows: false,
+  dotsClass: "slick-dots",
 };
 
 interface SlideProps {
@@ -76,7 +77,7 @@ const SliderComponent: React.FC = () => {
             }}
           />
           <Container className="h-60 md:h-[40rem] flex flex-col justify-center text-white gap-4 md:gap-6">
-            <p className="text-md md:text-2xl lg:text-4xl ">{slide.subTitle}</p>
+            <p className="text-md md:text-2xl lg:text-4xl">{slide.subTitle}</p>
             <h2 className="text-xl md:text-6xl font-bold max-w-xl">
               {slide.title}
             </h2>

@@ -123,7 +123,7 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
       img: service1,
@@ -144,7 +144,7 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
       img: service1,
@@ -165,7 +165,7 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
       img: service1,
@@ -186,7 +186,7 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
       img: service1,
@@ -207,7 +207,7 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
       img: service1,
@@ -228,7 +228,7 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
       img: service1,
@@ -249,7 +249,7 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
       img: service2,
@@ -263,28 +263,7 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
-    },
-    {
-      img: service3,
-      title: "Lorem ipsum dolor sit amet",
-      des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
-      button: "VIEW BLOG",
-      buttonBg: "danger",
-    },
-    {
-      img: service2,
-      title: "Lorem ipsum dolor sit amet",
-      des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
-      button: "VIEW BLOG",
-      buttonBg: "danger",
-    },
-    {
-      img: service3,
-      title: "Lorem ipsum dolor sit amet",
-      des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
-      button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
       img: service3,
@@ -305,7 +284,8 @@ export const blogsData: BlogsCategoryTypes = {
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
       button: "VIEW BLOG",
-      buttonBg: "secondary",
+      buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
   ],
+  
 };

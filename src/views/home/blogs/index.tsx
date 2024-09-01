@@ -13,9 +13,11 @@ export default function HomeBlog() {
           Latest Blogs
         </p>
         <ReusableCard
-          data={blogsData?.cardItem?.slice(0,3)}
+          type="basic"
+          data={blogsData?.cardItem?.slice(0, 3)}
           href="/blogs/"
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6"
+          bodyClass="p-10"
         />
       </Container>
     </div>

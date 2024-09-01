@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 interface ProgressBarProps {
   label: string;
@@ -22,4 +22,4 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ label, percentage }) => {
   );
 };
 
-export default ProgressBar;
+export default memo(ProgressBar);

@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Footer from "@/components/footer";
-import Header from "@/components/header/navbar-top";
+import "slick-carousel/slick/slick-theme.css"; 
+import HeaderLayout from "@/components/HeaderLayout";
+import FooterLayout from "@/components/FooterLayout"; 
+import NextTopLoader from 'nextjs-toploader';
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -23,10 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <Header />
+      <body className={roboto.className}> 
+        <NextTopLoader />
+        <HeaderLayout />
         {children}
-        <Footer />
+        <FooterLayout />
       </body>
     </html>
   );

@@ -3,10 +3,10 @@ import team1 from "@/assets/team/team1.jpg";
 import team2 from "@/assets/team/team2.jpg";
 import team3 from "@/assets/team/team3.jpg";
 import Container from "@/components/Container";
-import BasicCard from "@/components/BasicCard";
+import ResuableCardVarient from "@/components/ResuableCardVarient";
 
 interface CardItem {
-  img: StaticImageData;
+  img: string | StaticImageData;
   name: string;
   color: string;
   positionColor: string;
@@ -47,7 +47,11 @@ export default function HomeTeam() {
         <p className="text-xl md:text-4xl uppercase text-center font-bold mt-3 mb-14">
           Our Technical Experts
         </p>
-        <BasicCard data={data} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" />
+        <ResuableCardVarient
+          data={data}
+          type="basic"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6"
+        />
       </Container>
     </div>
   );

@@ -13,9 +13,13 @@ export default function HomeService() {
           Quality Servicing Oppertunity
         </p>
         <ReusableCard
+          type="basic"
           data={servicesData?.cardItem?.slice(0, 3)}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6"
           href="/services/"
+          imgClass="rounded-t-2xl"
+          cardClass="rounded-2xl"
+          bodyClass="p-10"
         />
       </Container>
     </div>

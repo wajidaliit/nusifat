@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { memo } from "react";
 import Button from "./Button";
 import rightUpArrow from "@/assets/header/rightUpArrow.svg";
 import { StaticImageData } from "next/image";
@@ -84,4 +84,4 @@ const ReusableBlogLinks: React.FC<ReusableBlogLinksProps> = ({
   );
 };
 
-export default ReusableBlogLinks;
+export default memo(ReusableBlogLinks);

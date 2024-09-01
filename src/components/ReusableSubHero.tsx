@@ -9,8 +9,9 @@ import contactUs from "@/assets/sub-hero/contact-us.jpg";
 import { useReadCurrentPath } from "@/hooks/useReadCurreentPath";
 import { useCurrentPath } from "@/hooks/useCurrentPath";
 import { useSegment } from "@/hooks/useSegment";
+import { memo } from "react";
 
-export default function ReusableSubHero() {
+const ReusableSubHero = memo(function ReusableSubHero() {
   const currentPath = useCurrentPath();
   const path = useReadCurrentPath();
   const segment = useSegment();
@@ -53,4 +54,6 @@ export default function ReusableSubHero() {
       </div>
     </div>
   );
-}
+});
+
+export default ReusableSubHero; 

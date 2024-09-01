@@ -1,0 +1,36 @@
+/* CSS file to style the dots */
+.slick-dots {
+    background-color: white;
+    max-width: max-content;
+    bottom: 0px;
+    padding: 15px 30px;
+    /* transform: translateX(-50%); */
+  }
+  
+  .slick-dots li {
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    background-color: red;
+    opacity: 0.5; 
+    width: 10px;
+    height: 10px;
+    border: 3px solid white;
+    outline: 2px solid white;
+  }
+  
+  .slick-dots li.slick-active button {
+    opacity: 1;
+    outline: 2px solid #E8E8E8;
+
+  }
+
+ 
+
+  @media only screen and (max-width: 767px) {
+    .slick-dots { 
+        padding: 8px 16px; 
+      }
+  }
+  

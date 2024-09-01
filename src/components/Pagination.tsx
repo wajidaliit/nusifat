@@ -1,3 +1,6 @@
+"use client";
+import { memo } from "react";
+
 interface PaginationProps {
   totalItems: number;
   itemsPerPage: number;
@@ -6,7 +9,7 @@ interface PaginationProps {
   className?: string;
 }
 
-export default function Pagination({
+const Pagination = memo(function Pagination({
   totalItems,
   itemsPerPage,
   currentPage,
@@ -76,4 +79,6 @@ export default function Pagination({
       </li>
     </ul>
   );
-}
+});
+
+export default Pagination;
