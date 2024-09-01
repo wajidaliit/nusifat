@@ -114,7 +114,7 @@ const HeroSecondHome: React.FC = () => {
 
               <Button
                 icon={<MdArrowOutward color="#E90000" />}
-                className=" lg:hidden  absolute -bottom-10 -right-3 uppercase bg-white"
+                className=" lg:hidden  absolute bottom-3 -right-3 uppercase bg-white"
                 style={{
                   color: "#E90000",
                 }}
