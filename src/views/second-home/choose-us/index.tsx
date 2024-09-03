@@ -1,6 +1,7 @@
-import Container from "@/components/Container"; 
+import Container from "@/components/Container";
 import { secondHomeChooseUsData } from "../../../../data/home-2/choose-us";
 import Button from "@/components/Button";
+import CommonImage from "@/components/CommonImage";
 
 export default function ChooseUsSecondHome() {
   return (
@@ -8,11 +9,13 @@ export default function ChooseUsSecondHome() {
       <div className="absolute inset-0 flex">
         <div className="w-full md:w-[75%] bg-black"></div>
         <div
-          className="hidden md:block w-[25%] bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${secondHomeChooseUsData?.img1.src})`,
-          }}
-        ></div>
+          className="hidden md:block w-[25%] overflow-hidden bg-cover bg-center" 
+        > 
+          <CommonImage
+            src={secondHomeChooseUsData?.img1}
+            alt="img1"  
+          />
+        </div>
       </div>
       <Container className="py-14 md:py-20 relative z-10">
         <div className="grid grid-cols-10 gap-8 text-white">
@@ -40,7 +43,9 @@ export default function ChooseUsSecondHome() {
                   {secondHomeChooseUsData?.symbol}
                 </h2>
               </div>
-              <p className="max-w-[8rem]">{secondHomeChooseUsData?.sytisfied}</p>
+              <p className="max-w-[8rem]">
+                {secondHomeChooseUsData?.sytisfied}
+              </p>
             </div>
           </div>
           <div />

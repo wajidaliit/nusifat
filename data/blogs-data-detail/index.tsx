@@ -74,9 +74,11 @@ interface BlogsCategoryTypes {
   date: string;
   user: string;
   icon: ReactNode;
+  id: number;
 }
 
 export const blogsDataDetail: BlogsCategoryTypes = {
+  id: 1,
   title: "Blogs",
   subTitle: "Lorem ipsum dolor sit amet", 
   button: <Button>Construction</Button>,

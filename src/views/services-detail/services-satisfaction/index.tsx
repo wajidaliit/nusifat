@@ -5,10 +5,10 @@ export default function ServicesSatisfaction() {
   return (
     <>
       <div className="bg-water">
-        <Container className="pb-12 md:pb-36"> 
+        <Container className="pb-12 md:pb-36">
           <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
             <div className="">
-              <div className="h-64 md:h-[40rem] w-full md:w-[30rem] relative">
+              <div className="h-64 md:h-[40rem] w-full md:w-[30rem] relative"> 
                 <CommonImage
                   src={servicesDataDetail?.img1}
                   alt="img"

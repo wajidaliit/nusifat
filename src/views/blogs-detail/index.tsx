@@ -1,3 +1,4 @@
+"use client";
 import CommonImage from "@/components/CommonImage";
 import { blogsDataDetail } from "../../../data/blogs-data-detail";
 import Container from "@/components/Container";

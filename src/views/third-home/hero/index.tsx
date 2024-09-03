@@ -9,6 +9,7 @@ import slide4 from "@/assets/hero/slide4.jpg";
 import Button from "@/components/Button";
 import { StaticImageData } from "next/image";
 import Container from "@/components/Container";
+import CommonImage from "@/components/CommonImage";
 
 // Define slider settings
 const settings = {
@@ -76,17 +77,17 @@ const HeroThirdHome: React.FC = () => {
   return (
     <Slider {...settings}>
       {slides.map((slide, index) => (
-        <div key={index} className="relative h-96 md:h-[37rem] w-full">
-          {/* Background Image with Gradient Overlay */}
-          <div
-            className="absolute inset-0 bg-cover bg-center"
+        <div key={index} className="relative h-96 md:h-[37rem] w-full"> 
+          <CommonImage
+            src={slide.src}
+            alt={slide.alt}
+            className="absolute inset-0"
             style={{
-              backgroundImage: `linear-gradient(to bottom, rgb(16, 45, 61), rgba(16, 45, 61, 0.8) 30%, rgba(16, 45, 61, 0.6) 60%, rgba(16, 45, 61, 0.3) 90%, rgba(0, 0, 0, 0)), url(${slide.src.src})`,
               filter: "blur(1px) brightness(0.7)",
               opacity: 0.9,
               zIndex: -1,
             }}
-          />
+          />  
           {/* Content Overlay */}
           <Container className="h-96 md:h-[40rem] flex flex-col items-center justify-center text-white gap-4 md:gap-6">
             <h1 className="text-md md:text-2xl lg:text-4xl w-max">

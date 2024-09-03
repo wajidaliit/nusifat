@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}> 
-        <NextTopLoader />
+        <NextTopLoader  color="#E90000" />
         <HeaderLayout />
         {children}
         <FooterLayout />

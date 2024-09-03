@@ -1,10 +1,12 @@
 "use client";
+
 import Image, { StaticImageData } from "next/image";
 import { CSSProperties, FC, memo } from "react";
 
 interface CommonImageProps {
   src: string | StaticImageData;
-  alt: string;
+  alt?: string;
+  loading?: "lazy" | "eager";   
   className?: string;
   width?: number;
   height?: number;
@@ -14,18 +16,20 @@ interface CommonImageProps {
 const CommonImage: FC<CommonImageProps> = ({
   src,
   alt = "img",
-  className = "",
   width,
   height,
-  style,
+  loading = "lazy",  
+  className = "",
+  style
 }) => {
   return (
     <Image
       src={src}
       alt={alt}
-      className={className}
       width={width}
       height={height}
+      loading={loading}    
+      className={className}
       style={style}
     />
   );

@@ -17,6 +17,7 @@ interface CardItem {
   button?: string;
   buttonBg?: string;
   date?: string;
+  id?: number;
 }
 
 interface ReusableCardProps {

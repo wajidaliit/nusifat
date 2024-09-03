@@ -69,7 +69,7 @@ interface PropsTypes {
 export const servicesDataDetail: PropsTypes = {
   title: "Our Services",
   subTitle: "Elite Structues",
-  img1: service1,
+  img1: service1, 
   img2: service2,
   img3: service3,
   img4: tablet,

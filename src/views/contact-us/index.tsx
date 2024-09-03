@@ -1,11 +1,12 @@
+"use client";
 import { contactUsData } from "../../../data/contact-us-data";
 import Container from "@/components/Container";
 import IndustryContact from "./industry-contact";
 import ContactForm from "./form";
 import ContactLocation from "./location";
-import IndustryInformation from "./industry-information";
+import IndustryInformation from "./industry-information"; 
 
-export default function ContactUs() {
+export default function ContactUs() { 
   return (
     <div className="bg-water">
       <Container className="pt-16">

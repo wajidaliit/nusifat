@@ -74,12 +74,13 @@ const HeroSecondHome: React.FC = () => {
     <Slider ref={sliderRef} {...settings} className="relative ">
       {slides.map((slide, index) => (
         <div key={index} className="relative h-96 md:h-[37rem] w-full  ">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
+          <CommonImage
+            src={slide.src}
+            alt={slide.alt}   
+            className="absolute inset-0"
             style={{
-              backgroundImage: `url(${slide.src.src})`,
-              filter: "blur(1px) brightness(0.5)",
-              opacity: 0.9,
+              filter: "blur(2px) brightness(0.5)",
+              opacity: 0.8,
               zIndex: -1,
             }}
           />

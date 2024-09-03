@@ -5,10 +5,11 @@ import slide1 from "@/assets/hero/slide1.jpg";
 import slide2 from "@/assets/hero/slide2.jpg";
 import slide3 from "@/assets/hero/slide3.jpg";
 import slide4 from "@/assets/hero/slide4.jpg";
-import Button from "@/components/Button";
-import { StaticImageData } from "next/image";
+import Button from "@/components/Button"; 
 import Container from "@/components/Container";
 import "./SliderComponent.css"; // Import your CSS file
+import CommonImage from "@/components/CommonImage";
+import { StaticImageData } from "next/image";
 
 // Define slider settings
 const settings = {
@@ -24,7 +25,7 @@ const settings = {
 };
 
 interface SlideProps {
-  src: StaticImageData;
+  src: string | StaticImageData;
   alt: string;
   subTitle: string;
   title: string;
@@ -67,10 +68,11 @@ const SliderComponent: React.FC = () => {
     <Slider {...settings}>
       {slides.map((slide, index) => (
         <div key={index} className="relative h-60 md:h-[40rem] w-full">
-          <div
-            className="absolute inset-0 bg-cover bg-center"
+          <CommonImage
+            src={slide.src}
+            alt={slide.alt}   
+            className="absolute inset-0"
             style={{
-              backgroundImage: `url(${slide.src.src})`,
               filter: "blur(1px) brightness(0.5)",
               opacity: 0.9,
               zIndex: -1,

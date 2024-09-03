@@ -1,6 +1,5 @@
-import Button from "@/components/Button";
-import { StaticImageData } from "next/image";
-import { ReactNode } from "react";
+ 
+import { StaticImageData } from "next/image"; 
 import service1 from "@/assets/services/service1.jpg";
 import service2 from "@/assets/services/service2.jpg";
 import service3 from "@/assets/services/service3.jpg";
@@ -42,6 +41,7 @@ interface CardItemTypes {
   des: string;
   button: string;
   buttonBg: string;
+  id: number;
 }
 
 interface BlogsCategoryTypes {
@@ -105,6 +105,7 @@ export const blogsData: BlogsCategoryTypes = {
   // card item section
   cardItem: [
     {
+      id: 1,
       img: service1,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -112,6 +113,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -119,6 +121,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -126,6 +129,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
+      id: 1,
       img: service1,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -133,6 +137,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -140,6 +145,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -147,6 +153,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
+      id: 1,
       img: service1,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -154,6 +161,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -161,6 +169,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -168,6 +177,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
+      id: 1,
       img: service1,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -175,6 +185,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -182,6 +193,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -189,6 +201,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
+      id: 1,
       img: service1,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -196,6 +209,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -203,6 +217,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -210,6 +225,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
+      id: 1,
       img: service1,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -217,6 +233,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -224,6 +241,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -231,6 +249,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
+      id: 1,
       img: service1,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -238,6 +257,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -245,6 +265,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -252,6 +273,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -259,6 +281,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -266,6 +289,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "outlined", // Changed from "secondary" to "outlined"
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -273,6 +297,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service2,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
@@ -280,6 +305,7 @@ export const blogsData: BlogsCategoryTypes = {
       buttonBg: "danger",
     },
     {
+      id: 1,
       img: service3,
       title: "Lorem ipsum dolor sit amet",
       des: "Lorem ipsum dolor sit amet. Ut inventore ipsa cum minus dolorum ut vitae rerum est as saepe est velt provident",
