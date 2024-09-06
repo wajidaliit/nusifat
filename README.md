@@ -2,17 +2,31 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+# Project NUSIFAT
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Description
+
+This is a Next.js(TypeScript) project for creating a website with dynamic content and responsive design.
+
+## Prerequisites
+
+1. Before you begin, ensure you have met the following requirements:
+
+- **Node.js** installed (v20.15.0 or later recommended)
+- **npm** (Node Package Manager)
+- An IDE like **Visual Studio Code** for editing code
+
+2. Navigate to the project directory
+   cd repository-name
+
+3. Install dependencies (Run the following command to install all required packages:)
+   npm install
+
+4. Run the development server( To start the development server, run)
+   npm run dev
+
+5. Building for Production(To build the project for production, use the following command:)
+   npm run build
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 

@@ -81,7 +81,7 @@ const SliderComponent: React.FC = () => {
           <Container className="h-60 md:h-[40rem] flex flex-col justify-center text-white gap-4 md:gap-6">
             <p className="text-md md:text-2xl lg:text-4xl">{slide.subTitle}</p>
             <h2 className="text-xl md:text-6xl font-bold max-w-xl">
-              {slide.title}
+              {slide.title} 
             </h2>
             <div>{slide.button}</div>
           </Container>
