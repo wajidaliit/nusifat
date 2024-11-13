@@ -6,7 +6,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ### Description
 
-This is a Next.js(TypeScript) project for creating a website with dynamic content and responsive design.
+This is a Next.js(TypeScript) + Tailwind css project for creating a website with dynamic content and responsive design.
 
 ## Prerequisites
 
@@ -27,6 +27,8 @@ This is a Next.js(TypeScript) project for creating a website with dynamic conten
 
 5. Building for Production(To build the project for production, use the following command:)
    npm run build
+
+6. Use .next folder for production(deployment)
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
